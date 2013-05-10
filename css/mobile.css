@@ -1,0 +1,480 @@
+/* ====================================
+	Design: 
+	CSS: 
+	Built: 
+	Last Edit: 
+	URI: 
+	v1.0.1 | 05-01-2013
+=======================================*/
+
+/* ---------- Tablets (portrait) ---------- */
+
+@media screen and (min-width: 700px) and (max-width: 800px){
+body{}	
+#container{width: 100%;}
+header {background-color: #f9fe09;}
+header img{}
+header a {}
+#wrapper{}
+nav{}
+nav ul li a {}
+#content{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#content img, figure img{
+	max-width: 95%;
+	height: auto;
+	float: none;
+	margin: 0;
+}
+.twoCol{
+	width: 47.9%;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+.threeCol{
+	width: 31%;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+.animalBox{
+	width: 32%;
+}
+.animalBox a img{
+	max-width: 95%;
+	height: auto;
+}
+.animalBox a:hover{}
+form .twoCol{width: 47%;}
+.realname, .ranch, .address, .email{width: 92%;}
+.city{width: 93%;}
+.state{width: 48%;}
+.zip{width: 43%;}
+.phone{ width: 42.8%;}
+.comments{
+	width: 89%;
+	height: 155px;
+}
+footer{}
+
+}/* << don't delete this */
+
+/* -------------- Phones ---------------- */
+@media screen and (max-width: 700px){
+
+/* @group Side Menu */
+
+/* General styles for all menus */
+	.cbp-spmenu {
+		position: fixed;
+		background-color: #323232;
+		-moz-box-shadow: inset -3px 4px 13px rgba(0, 0, 0, 0.7);
+		-webkit-box-shadow: inset -3px 4px 13px rgba(0, 0, 0, 0.7);
+		box-shadow: inset -3px 4px 13px rgba(0, 0, 0, 0.7);
+	}
+	.cbp-spmenu a {
+		display: block;
+		color: #afafaf;
+		font-size: 1.4em;
+		text-decoration: none;
+		text-shadow: 0 -1px 0 #000000;
+	}
+	.cbp-spmenu a i{
+		visibility: visible;
+		float: right;
+		width: auto!important;
+		height: auto!important;
+	}
+	.cbp-spmenu a:active {
+		color: #373737;
+		background-color: #8d8d8d;
+		text-shadow: 0 1px 0 #aaaaaa;
+	}
+/* Orientation-dependent styles for the content of the menu */
+	.cbp-spmenu-vertical {
+		width: 240px;
+		height: 100%;
+		top: 0;
+		z-index: 1000;
+	}
+	.cbp-spmenu-vertical a {
+		border-bottom: 1px solid #161616;
+		padding: 1em;
+		border-top: 1px solid #626262;
+	}
+/* Vertical menu that slides from the left or right */
+	.cbp-spmenu-left {left: -240px;}
+	.cbp-spmenu-left.cbp-spmenu-open {left: 0px;}
+/* Push classes applied to the body */
+	.cbp-spmenu-push {
+		overflow-x: hidden;
+		position: relative;
+		left: 0;
+	}
+	.cbp-spmenu-push-toright {left: 240px;}
+	.cbp-spmenu-push-toleft {left: -240px;}
+/* Transitions */
+	.cbp-spmenu,
+	.cbp-spmenu-push {
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	}
+/* @end */
+
+body {}
+#container {width: 100%;}
+#wrapper {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+header {background-color: #fe0a0a;}
+header a {}
+header a h1 {}
+nav {position: relative;}
+nav ul {}
+nav ul li {}
+nav ul li a {
+	display: block;
+	font-size: 1.5em;
+	padding: 8px;
+}
+footer{}
+#api {
+	width: 85%;
+	margin: 10px auto 20px;
+}
+.menu{
+	visibility: visible;
+	width: auto!important;
+	padding: 9px;
+	background: #2e67bb;
+	border-bottom: 1px solid #051024;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 0;
+	height: auto;
+	background-image: -webkit-linear-gradient(top, #599fef,#0c3b91);
+	background-image: -moz-linear-gradient(top, #599fef,#0c3b91);
+	background-image: -o-linear-gradient(top, #599fef,#0c3b91);
+	background-image: linear-gradient(to bottom, #599fef,#0c3b91);
+	-webkit-box-shadow: inset 0 1px rgba(255,255,255,0.25),0 0 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0 1px rgba(255,255,255,0.25),0 0 3px rgba(0,0,0,0.5);
+}
+
+.menu h1{
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.63);
+	margin: 0;
+	padding: 4px 42px;
+	font-size: 1.2em;
+}
+.menu-button {
+	display: block;
+	position: relative;
+	z-index: 1;
+	font-weight: bold;
+	border: 1px solid rgba(31, 31, 31, 0.61);
+	border-radius: 4px;
+	box-sizing: content-box;
+	-webkit-box-shadow: inset 0 1px rgba(255,255,255,0.15),0 1px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px rgba(255,255,255,0.15),0 1px rgba(0,0,0,0.1);
+	background: #1e70e2;
+	background: -moz-linear-gradient(top,  #1e70e2 0%, #0049b3 50%, #00388e 51%, #002f7a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e70e2), color-stop(50%,#0049b3), color-stop(51%,#00388e), color-stop(100%,#002f7a));
+	background: -webkit-linear-gradient(top,  #1e70e2 0%,#0049b3 50%,#00388e 51%,#002f7a 100%);
+	background: -o-linear-gradient(top,  #1e70e2 0%,#0049b3 50%,#00388e 51%,#002f7a 100%);
+	background: -ms-linear-gradient(top,  #1e70e2 0%,#0049b3 50%,#00388e 51%,#002f7a 100%);
+	background: linear-gradient(to bottom,  #1e70e2 0%,#0049b3 50%,#00388e 51%,#002f7a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e70e2', endColorstr='#002f7a',GradientType=0 );
+	padding: 10px;
+	padding: 4px 8px;
+	background-color: #1c4ead;
+	font-size: 1.5em;
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.63);
+	float: left;
+}
+
+#content {}
+#content img{
+	max-width: 95%;
+	height: auto;
+	float: none;
+	margin: 0;
+}
+#content, #content p, #content ul li, #content ol li{}	
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.twoCol, .threeCol, .animalBox {
+	display: block;
+	float: none;
+	margin: 0;
+	width: 100%;
+}
+.left {
+	float: none;
+	margin-right: 0px;
+	margin-bottom: 10px;
+}
+
+.right {
+	float: none;
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+
+form .twoCol{
+	margin: 0 0 8px;
+	width: 100%;
+	padding: 0;
+}
+input, textarea {}
+fieldset {width: 93%; margin: auto;}
+fieldset p {}
+fieldset ul {margin-left: 0;}
+.realname, .ranch, .address, .email {width: 96%;}
+.city {width: 96%; margin-bottom: 10px;}
+.state {width: 96%;	margin-bottom: 10px;}
+.zip {width: 96%;}
+.phone {width: 96%; margin-bottom: 10px;}
+.comments {width: 96%; height: 120px;}
+
+/*EPDs and PEDs*/
+.PedAnmName {
+	color: #9c2f19;
+	font-weight: bold;
+	padding: 9px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.PedCalvedRow {
+	font-style: italic;
+	padding-bottom: .75em;
+	text-align: center;
+	font-size: 1em;
+}
+.epdall {
+	display: block;
+	width: 100%;
+}
+
+.epdall td {display: block;}
+.PedTable {
+	width: auto;
+	letter-spacing: -1px;
+	line-height: 1.8em;
+	font-size: 1em;
+	margin: auto;
+}
+.PedPGS, 
+.PedMGS, 
+.PedPGD, 
+.PedMGD 
+{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.PedS, .PedD {
+	color: #9c2f19;
+	font-weight: bold;
+}
+
+.PedPGS, .PedPGD, .PedMGS, .PedMGD {
+	margin-left: 3em;
+	margin-right: 1em;
+}
+
+.PedPGS:before, 
+.PedMGS:before 
+{
+	content: "\00250C\0000a0";
+	display: block;
+}
+.PedPGD:before, 
+.PedMGD:before {
+	content: "\002514\0000a0";
+}
+.PedTable td {
+	display: block;
+	text-align: left;
+}
+.PedTable td:last-child {
+	visibility: collapse;
+	height: 0;
+}
+
+.divEpdTbl td {}
+
+.EPDProdTable, 
+.EPDMatTable, 
+.EPDCarcTable, 
+.EPDValueTable, 
+.PerformanceDataTable, 
+.DamProdAvgTable 
+{
+	border-top: 1px solid #b3b3b3;
+	border-left: 1px solid #b3b3b3;
+}
+
+.EPDProdTable td, 
+.EPDMatTable td, 
+.EPDCarcTable td, 
+.EPDValueTable td, 
+.PerformanceDataTable td, 
+.DamProdAvgTable td 
+{
+	border-right: 1px solid #b3b3b3;
+	border-bottom: 1px solid #b3b3b3;
+}
+
+.EPDProdHeaderProd, 
+.EPDMatHeaderMat, 
+.EPDCarcHeaderCarc, 
+.EPDValueHeaderValue, 
+.PerformanceDataTableHeaderPerf, 
+.DamProdAvgHead 
+{
+	text-align: center;
+	font-size: 1.7em!important;
+}
+
+.EPDProdSubHeader, 
+.EPDMatSubHeader, 
+.EPDCarcSubHeader, 
+.EPDValueSubHeader, 
+.PerformanceDataSubHeader, 
+.DamProdAvgSubHead 
+{
+	visibility: collapse;
+	display: none;
+	height: 0;
+}
+
+.EPDProdDataCED, 
+.EPDProdDataBirth, 
+.EPDProdDataWW, 
+.EPDProdDataYR, 
+.EPDProdDataRadg, 
+.EPDProdDataYHT, 
+.EPDProdDataSC, 
+.EPDProdDataDoc, 
+.EPDMatDataHP, 
+.EPDMatDataCEM, 
+.EPDMatDataMilk, 
+.EPDMatDataMKHMKD, 
+.EPDMatDataMWT, 
+.EPDMatDataMHT, 
+.EPDMatDataAnmEn, 
+.EPDCarcDataCWT, 
+.EPDCarcDataMARB, 
+.EPDCarcDataRIB, 
+.EPDCarcDataFAT, 
+.EPDCarcDataCarcGrp, 
+.EPDCarcDataUsndGrp, 
+.EPDValueDataWv, 
+.EPDValueDataFv, 
+.EPDValueDataGv, 
+.EPDValueDataQg, 
+.EPDValueDataYg, 
+.EPDValueDataBv 
+{
+	display: block;
+	padding-left: 1px;
+	text-align: center;
+	background-color: #ffffff;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #ffffff;
+	color: #333333;
+	font-size: 1.5em;
+}
+
+.EPDAcc {padding-left: 20px;}
+
+.EPDProdDataCED:before,	
+.EPDProdDataBirth:before, 
+.EPDProdDataWW:before, 
+.EPDProdDataYR:before, 
+.EPDProdDataRadg:before, 
+.EPDProdDataYHT:before, 
+.EPDProdDataSC:before, 
+.EPDProdDataDoc:before, 
+.EPDMatDataHP:before, 
+.EPDMatDataCEM:before, 
+.EPDMatDataMilk:before, 
+.EPDMatDataMKHMKD:before, 
+.EPDMatDataMWT:before, 
+.EPDMatDataMHT:before, 
+.EPDMatDataAnmEn:before, 
+.EPDCarcDataCWT:before, 
+.EPDCarcDataMARB:before, 
+.EPDCarcDataRIB:before, 
+.EPDCarcDataFAT:before, 
+.EPDCarcDataCarcGrp:before, 
+.EPDCarcDataUsndGrp:before, 
+.EPDValueDataWv:before, 
+.EPDValueDataFv:before, 
+.EPDValueDataGv:before, 
+.EPDValueDataQg:before, 
+.EPDValueDataYg:before, 
+.EPDValueDataBv:before 
+{
+	background-color: #d2d2d2;
+	color: #656565;
+	text-shadow: 0 1px 1px #ffffff;
+	display: block;
+	text-align: center;
+	margin: -3px -3px 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-style: italic;
+}
+
+.EPDProdDataCED:before 		{content: "CED"}
+.EPDProdDataBirth:before 	{content: "BW"}
+.EPDProdDataWW:before 		{content: "WW"}
+.EPDProdDataYR:before 		{content: "YW"}
+.EPDProdDataRadg:before 	{content: "RADG"}
+.EPDProdDataYHT:before 		{content: "YH"}
+.EPDProdDataSC:before 		{content: "SC"}
+.EPDProdDataDoc:before 		{content: "Doc"}
+.EPDMatDataHP:before 		{content: "HP"}
+.EPDMatDataCEM:before 		{content: "CEM"}
+.EPDMatDataMilk:before 		{content: "Milk"}
+.EPDMatDataMKHMKD:before 	{content: "MKH/MKD"}
+.EPDMatDataMWT:before 		{content: "MW"}
+.EPDMatDataMHT:before 		{content: "MH"}
+.EPDMatDataAnmEn:before 	{content: "$EN"}
+.EPDCarcDataCWT:before 		{content: "CW"}
+.EPDCarcDataMARB:before 	{content: "MARB"}
+.EPDCarcDataRIB:before 		{content: "RE"}
+.EPDCarcDataFAT:before 		{content: "FAT"}
+.EPDCarcDataCarcGrp:before 	{content: "Carc GRP/PRG"}
+.EPDCarcDataUsndGrp:before 	{content: "Usnd GRP/PRG"}
+.EPDValueDataWv:before 		{content: "$W"}
+.EPDValueDataFv:before 		{content: "$F"}
+.EPDValueDataGv:before 		{content: "$G"}
+.EPDValueDataQg:before 		{content: "$QG"}
+.EPDValueDataYg:before 		{content: "$YG"}
+.EPDValueDataBv:before 		{content: "$B"}
+
+}

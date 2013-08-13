@@ -1,17 +1,26 @@
 /* ====================================
 	Design: Tim Blumer http://timblumer.com
 	CSS: Tim Blumer http://timblumer.com
-	v1.1 | 05-10-2013
+	v1.1 | 08-13-2013
 =======================================*/
-
+/* Table of Content
+==================================================
+	Reset
+	Layout
+	Typography
+	Pretty Forms
+	Wedgets
+	Misc
+	EPDs/PEDs
+	Buttons
+	Alert Boxes 
+================================================== */
 /* @group Reset */
-
 /* ====================================
 	http://meyerweb.com/eric/tools/css/reset/
 	v2.0 | 20110126
 	License: none (public domain)
 =======================================*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,7 +51,6 @@ blockquote:before, blockquote:after,
 q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse; border-spacing: 0;}
 /* @end */
-
 /* @group Layout */
 .menu{
 	visibility: collapse;
@@ -153,31 +161,24 @@ footer {}
 #api {font: 10px "Lucida Grande", Lucida, Verdana, sans-serif;}
 #api a {}
 #api a:hover {}
-
 /* @end */
-
 /* @group Typography */
-
 body{font-size: 100%;}
 strong{font-weight: bold;}
 em{font-style: italic;}
 p {margin-bottom: 10px;}
-
 h1, h2, h3, h4, h5, h6 {margin-bottom: 10px;}
-
 h1 {font-size: 2em;}
 h2 {font-size: 1.8em;}
 h3 {font-size: 1.6em;}
 h4 {font-size: 1.4em;}
 h5 {font-size: 1.2em;}
 h6 {font-size: 1em;}
-
 /* LVHA */
 a, a:link {}
 a:visited {}
 a:hover {}
 a:active {}
-
 figure{
 	position: relative;
 	text-align: center;
@@ -233,9 +234,7 @@ blockquote .cite{
 }
 blockquote .cite:before, blockquote .cite:after{content: " ~ ";}
 /* @end */
-
 /* @group Pretty Forms */
-
 form {
 	margin: 0 0 1em;
 	padding: 0;
@@ -271,12 +270,11 @@ input, textarea {
 	border-radius: 6px;
 }
 input:focus, textarea:focus{ 
-  outline: none;
-  -moz-box-shadow: 0px 0px 8px #51cbee;
-  -webkit-box-shadow: 0px 0px 8px #51cbee;
-  box-shadow: 0px 0px 8px #51cbee;  z-index: 3;
+	outline: none;
+	-moz-box-shadow: 0px 0px 8px #51cbee;
+	-webkit-box-shadow: 0px 0px 8px #51cbee;
+	box-shadow: 0px 0px 8px #51cbee;  z-index: 3;
 }
-
 /* fancy checkboxes and radio buttons */
 .option {
 	display: inline-block;
@@ -343,17 +341,12 @@ input:checked+.checkbox:before,input:checked+.radio:before {display: block}
 	border-radius: 3px
 }
 /* end fancy checkboxes and radio buttons */
-
 .realname, .ranch, .address, .email, .city, .comments  {width: 422px;}
 .zip {width: 200px;}
 .phone {width: 200px;}
 .comments {height: 133px;}
 /* state dropdown menu */
-.state {
-width: 210px;
-height: 35px;
-}
-
+.state {width: 210px; height: 35px;}
 .select {
 	display: inline-block;
 	vertical-align: top;
@@ -375,8 +368,7 @@ height: 35px;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 4px rgb(86, 86, 86);
 	text-decoration: none;
 	color: #333333!important;
-	}
-
+}
 .select>select {
 	display: block;
 	position: relative;
@@ -391,7 +383,6 @@ height: 35px;
 	-webkit-appearance: none;
 	font-size: 100%;
 }
-
 .select>select:focus {
 	z-index: 2;
 	width: 100%;
@@ -399,15 +390,8 @@ height: 35px;
 	outline-offset: -1px;
 	outline-width:5px;
 }
-
-.select>select::-ms-expand {
-	display: none
-}
-
-.select option {
-	text-shadow: none
-}
-
+.select>select::-ms-expand {display: none}
+.select option {text-shadow: none}
 .select:before,.select:after {
 	content: '';
 	position: absolute;
@@ -419,14 +403,12 @@ height: 35px;
 	border: 3px dashed;
 	border-color: #aaa transparent;
 	border-color: rgba(0,0,0,0.4) transparent;
-	pointer-events: none
+	pointer-events: none;
 }
-
 .select:before {
 	border-bottom-style: solid;
 	border-top: none
 }
-
 .select:after {
 	margin-top: 6px;
 	border-top-style: solid;
@@ -451,11 +433,8 @@ legend {
 	padding: 2px 6px;
 	color: #fff;
 }
-
 /* @end */
-
 /* @group Widgets */
-
 a[href$=".pdf"] {
 	background: url(../images/design/pdf.gif) no-repeat left 50%;
 	padding: 2px 0 2px 20px;
@@ -468,7 +447,6 @@ a[href$=".xls"] {
 	background: url(../images/design/xls.gif) no-repeat left 50%;
 	padding: 2px 0 2px 20px;
 }
-
 /* @end */
 /* @group Misc */
 hr{
@@ -484,9 +462,7 @@ hr{
 .clear {clear: both;}
 /* @end */
 /* @group EPDs/Peds*/
-
 /* Use this to clear items instead of the .clear */
-
 .group:before,
 .group:after {
 	content: "";
@@ -494,7 +470,6 @@ hr{
 }
 .group:after {clear: both;}
 .group {zoom: 1;/* IE6&7 */}
-
 img.no-border {
 	border: 0 none;
 	padding: 0;
@@ -514,7 +489,6 @@ img.no-border {
 	color: #2e68bc;
 	font-weight: bold;
 }
-
 /* Adds text indentation to pedigree names */
 .PedPGS, .PedPGD, .PedMGS, .PedMGD {
 	margin-left: 3em;
@@ -538,7 +512,6 @@ img.no-border {
 	vertical-align: middle;
 }
 .epdall {}
-
 #content table.EPDProdTable, 
 #content table.EPDMatTable, 
 #content table.EPDCarcTable, 
@@ -553,7 +526,6 @@ img.no-border {
 	border-top-style: none;
 	border-bottom: 1px solid #c6c6c6;
 }
-
 #content table.EPDProdTable td, 
 #content table.EPDMatTable td, 
 #content table.EPDCarcTable td, 
@@ -566,7 +538,6 @@ img.no-border {
 	border-top: 1px solid #c6c6c6;
 	border-bottom-style: none;
 }
-
 #content table td.EPDProdHeaderProd, 
 #content table td.EPDMatHeaderMat, 
 #content table td.EPDCarcHeaderCarc, 
@@ -577,7 +548,6 @@ img.no-border {
 	color: #ffffff;
 	font-weight: bold;
 }
-
 #content table tr.EPDProdSubHeader td, 
 #content table tr.EPDMatSubHeader td, 
 #content table tr.EPDCarcSubHeader td, 
@@ -587,7 +557,6 @@ img.no-border {
 	background-color: #565656;
 	color: #fff;
 }
-
 #content table tr.EPDProdDataRow td, 
 #content table tr.EPDMatDataRow td, 
 #content table tr.EPDCarcDataRow td, 
@@ -597,12 +566,9 @@ img.no-border {
 	background-color: #ffffff;
 	text-align: center;
 }
-
 .EPDAcc {padding-left: 5px;}
 .EPDAsOfDt {font-size: .8em;}
-
 /* @end */
-
 /* @group buttons */
 .btn {
 	display: inline-block;
@@ -646,10 +612,7 @@ img.no-border {
 	background-color: #e6e6e6;
 	*background-color: #d9d9d9;
 }
-.btn:active,
-.btn.active {
-	background-color: #cccccc \9;
-}
+.btn:active,.btn.active {background-color: #cccccc \9;}
 .btn:first-child {*margin-left: 0;}
 .btn:hover {
 	color: #333333;
@@ -657,7 +620,7 @@ img.no-border {
 	background-color: #e6e6e6;
 	*background-color: #d9d9d9;
 	/* Buttons in IE7 don't get borders, so darken on hover */
-  background-position: 0 -15px;
+ 	background-position: 0 -15px;
 	-webkit-transition: background-position 0.1s linear;
 	-moz-transition: background-position 0.1s linear;
 	-o-transition: background-position 0.1s linear;
@@ -774,39 +737,36 @@ img.no-border {
 	background-color: #222222;
 	*background-color: #151515;
 }
-
 /* @end */
-
 /* @group Alert Boxes */
-
 .alert {
-  padding: 8px 35px 8px 14px;
-  margin-bottom: 20px;
-  text-shadow: 0 1px 0 rgb(255, 255, 255);
-  background-color: #fcf8e3;
-  border: 1px solid #fbeed5;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+	padding: 8px 35px 8px 14px;
+	margin-bottom: 20px;
+	text-shadow: 0 1px 0 rgb(255, 255, 255);
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 .alert, .alert h4 {color: #c09853;}
 .alert h4 {margin: 0;}
 .alert-success {
-  color: #468847;
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
+	color: #468847;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
 }
 .alert-success h4 {color: #468847;}
 .alert-danger, .alert-error {
-  color: #b94a48;
-  background-color: #f2dede;
-  border-color: #eed3d7;
+	color: #b94a48;
+	background-color: #f2dede;
+	border-color: #eed3d7;
 }
 .alert-danger h4, .alert-error h4 {color: #b94a48;}
 .alert-info {
-  color: #3a87ad;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
+	color: #3a87ad;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
 }
 .alert-info h4 {color: #3a87ad;}
 /* @end */
